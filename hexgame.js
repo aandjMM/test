@@ -57,7 +57,7 @@ const start = () => {
                 const count = (lines || []).length;
 
                 const no = Math.floor(Math.random() * count);
-                const pangram = ["B", "I", "A", "T", "N", "O", "M"];
+                const pangram = ["B", "I", "A", "T", "N", "O", "C"];
 
                 console.log(pangram);
 
