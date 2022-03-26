@@ -39,7 +39,7 @@ const start = () => {
     // seed the Math random function based on the current date
     // https://github.com/davidbau/seedrandom
     const today = new Date();
-    Math.seedrandom("" + today.getMonth() + today.getDate());
+    Math.seedrandom("" + today.getDate());
 
     // set up game
     const urlParams = new URLSearchParams(window.location.search);
