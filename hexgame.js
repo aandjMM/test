@@ -178,9 +178,9 @@ const enter = () => {
             isValid = false;
             incorrectWord("Missing centre letter");
         }
-        if (isValid && !dictionary.includes(word.toLowerCase())) {
+        /* if (isValid && !dictionary.includes(word.toLowerCase())) {
             isValid = false;
-            incorrectWord("Not in the fam dictionary");
+            incorrectWord("Not in the fam dictionary"); */
         }
         if (isValid && foundWordsList.includes(word)) {
             isValid = false;
