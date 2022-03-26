@@ -28,7 +28,7 @@ const start = () => {
     wordCount = document.querySelector("#wordCount");
 
     document.querySelector("#deleteButton").addEventListener("click", deleteLetter);
-    document.querySelector("#shuffleButton").addEventListener("click", shuffle);
+    document.querySelector("#shuffleButton").addEventListener("click", shuffsle);
     document.querySelector("#enterButton").addEventListener("click", enter);
     document.addEventListener("keydown", typeLetter);
 
@@ -43,6 +43,7 @@ const start = () => {
 
     // set up game
     const urlParams = new URLSearchParams(window.location.search);
+	//alert(urlParams);
     if (urlParams.has("pangram")) {
         if (urlParams.has("mid")) {
             setUpWithWord(urlParams.get("pangram").toUpperCase(), urlParams.get("mid").toUpperCase());
@@ -56,7 +57,7 @@ const start = () => {
                 const count = (lines || []).length;
 
                 const no = Math.floor(Math.random() * count);
-                const pangram = lines[no].trim();
+                const pangram = ["B", "I", "A", "T", "N", "O", "C"];
 
                 console.log(pangram);
 
