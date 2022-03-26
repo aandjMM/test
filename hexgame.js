@@ -28,7 +28,7 @@ const start = () => {
     wordCount = document.querySelector("#wordCount");
 
     document.querySelector("#deleteButton").addEventListener("click", deleteLetter);
-    document.querySelector("#shuffleButton").addEventListener("click", shuffle);
+    document.querySelector("#shuffleButton").addEventListener("click", shuffsle);
     document.querySelector("#enterButton").addEventListener("click", enter);
     document.addEventListener("keydown", typeLetter);
 
